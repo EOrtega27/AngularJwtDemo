@@ -1,0 +1,26 @@
+<div>
+    <h3>
+        Mis Clientes
+    </h3>
+
+    <table class="mt-5 table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <TH>NOMBRE</TH>
+                <th>APELLIDO</th>
+                <TH>CORREO</TH>
+                <th>TELEFONO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cliente of clientes">
+                <td>{{cliente.id}}</td>
+                <td>{{cliente.name}}</td>
+                <td>{{cliente.lastname}}</td>
+                <td>{{cliente.email}}</td>
+                <td>{{cliente.phone}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
